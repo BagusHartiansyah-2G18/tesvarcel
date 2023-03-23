@@ -1,0 +1,16 @@
+git config --global user.name "bgsDev"
+BagusHartiansyah-2G18
+
+git config --global user.email "bgs07dev@gmail.com"
+bagushartiansyah07@gmail.com
+
+git config --global user.password "@gustus1997"
+git remote set-url origin https://github.com/bgsDev/taReact.git
+
+git config --global --edit
+git commit --amend --reset-author
+
+git config credential.username "bgsDev"
+
+change user 
+Control Panel\User Accounts\Credential Manager
