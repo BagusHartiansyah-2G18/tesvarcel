@@ -19,7 +19,7 @@ describe('reducer thread tester', () => {
     // assert
     expect(nextState).toEqual(initialState);
   });
-  it('should return the initial state when given by unknown action', () => {
+  it('should return user with new user when given by RECEIVE_USERS action', () => {
     // arrange
     const initialState = [
       {
