@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 /**
  * skenario testing
  *
@@ -6,7 +7,6 @@
  *   - should handle password typing correctly
  *   - should call login function when login button is clicked
  */
-import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Clogin from './Clogin';
