@@ -3,21 +3,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Finput({
-  type, plac, value, onchange, cls,
-}) {
-  return (
-    <input className={cls} type={type} placeholder={plac} value={value} onChange={onchange} />
-  );
-}
-Finput.propTypes = {
-  type: PropTypes.string.isRequired,
-  plac: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  cls: PropTypes.string.isRequired,
-  onchange: PropTypes.func.isRequired,
-};
-
 function FinputG({
   type, plac, value, onchange, cls, icon, clsIcon,
 }) {
@@ -26,9 +11,7 @@ function FinputG({
       <span className={`input-group-addon ${clsIcon}`}>
         {icon}
       </span>
-      {Finput({
-        type, plac, value, onchange, cls,
-      })}
+      <input className={cls} type={type} placeholder={plac} value={value} onChange={onchange} />
     </div>
   );
 }
@@ -111,7 +94,6 @@ FinputG.propTypes = {
   clsIcon: PropTypes.string.isRequired,
 };
 export {
-  Finput,
   FinputG,
   Fselect,
   FcontentEditable,

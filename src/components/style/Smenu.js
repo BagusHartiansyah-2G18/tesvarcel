@@ -2,8 +2,7 @@
 import styled from 'styled-components';
 
 const Smenus = styled.span`
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
-    color: red !important;
 `;
 export default Smenus;
