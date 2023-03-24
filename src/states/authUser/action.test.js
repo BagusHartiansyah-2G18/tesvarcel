@@ -24,11 +24,11 @@ const login = {
 describe('set auth User thunk', () => {
   beforeEach(() => {
     // backup original implementation
-    api.getOwnProfile = api.getOwnProfile;
+    api._getOwnProfile = api.getOwnProfile;
   });
   afterEach(() => {
     // restore original implementation
-    api.getOwnProfile = api.getOwnProfile;
+    api.getOwnProfile = api._getOwnProfile;
 
     // delete backup
     delete api.getOwnProfile;

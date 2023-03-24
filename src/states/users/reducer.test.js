@@ -3,7 +3,7 @@
  *
  * - user Reducer function
  *  - should return the initial state when given by unknown action
- *
+ *  -should return the user with new user when given by RECEIVE_USERS action
  */
 import usersReducer from './reducer';
 
@@ -19,7 +19,7 @@ describe('reducer thread tester', () => {
     // assert
     expect(nextState).toEqual(initialState);
   });
-  it('should return the initial state when given by unknown action', () => {
+  it('should return the user with new user when given by RECEIVE_USERS action', () => {
     // arrange
     const initialState = [
       {
