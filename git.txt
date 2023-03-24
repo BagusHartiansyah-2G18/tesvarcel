@@ -14,3 +14,11 @@ git config credential.username "bgsDev"
 
 change user 
 Control Panel\User Accounts\Credential Manager
+
+
+develoy
+
+git checkout -b ci-cd-test
+git add .
+git commit -m "make test pass"
+git push origin ci-cd-test

@@ -25,11 +25,11 @@ const allUserRespon = [
 describe('getDataUser thunk', () => {
   beforeEach(() => {
     // backup original implementation
-    api.getDataUser = api.getDataUser;
+    api._getDataUser = api.getDataUser;
   });
   afterEach(() => {
     // restore original implementation
-    api.getDataUser = api.getDataUser;
+    api.getDataUser = api._getDataUser;
 
     // delete backup
     delete api.getDataUser;
