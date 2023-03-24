@@ -32,7 +32,6 @@ function PdetailTherad() {
 
   const oncSetNewComment = () => {
     dispatch(actAddNewComment({ id, content }));
-    setContent('');
   };
 
   const onvoteComment = (idComment) => {
