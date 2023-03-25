@@ -1,7 +1,7 @@
 /**
  * test scenario for thread
  *
- * - talkReducers function
+ * - threadReducer function
  *  - should return the initial state when given by unknown action
  *  - should return the thread when given by ALL_THREAD action
  *  - should return the thread with the new thread when given by ADD_thread action

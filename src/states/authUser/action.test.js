@@ -3,7 +3,6 @@
  *
  * - actSetAuthUser thunk
  *  - should dispatch action correctly when data fetching success
- *  - should dispatch action and call alert correctly when data fetching failed
  */
 import { hideLoading, showLoading } from 'react-redux-loading-bar';
 import api from '../../utils/api';
@@ -21,7 +20,7 @@ const login = {
   password: 'bgs@bgs.com',
 };
 
-describe('set auth User thunk', () => {
+describe('actSetAuthUser thunk', () => {
   beforeEach(() => {
     // backup original implementation
     api._getOwnProfile = api.getOwnProfile;

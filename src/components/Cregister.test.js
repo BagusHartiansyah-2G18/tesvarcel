@@ -1,11 +1,11 @@
 /**
  * skenario testing
  *
- * - LoginInput component
- *  - should handle user typing correctly
+ * - Register input component
+ *  -  should handle user typing correctly
  *   - should handle Email typing correctly
  *   - should handle password typing correctly
- *   - should call login function when login button is clicked
+ *   - should call Daftar function when Daftar button is clicked
  */
 import React from 'react';
 import { render, screen } from '@testing-library/react';
@@ -13,7 +13,7 @@ import userEvent from '@testing-library/user-event';
 import Cregister from './Cregister';
 import '@testing-library/jest-dom';
 
-describe('LoginInput component', () => {
+describe('Register input component', () => {
   it('should handle User typing correctly', async () => {
     // Arrange
     render(<Cregister oncForm={() => {}} />);
